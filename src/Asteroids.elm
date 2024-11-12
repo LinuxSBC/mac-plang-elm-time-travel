@@ -113,9 +113,8 @@ view computer model =
 
 drawGameOver model =
   if model.gameOver == True then
-    [gameOver |> viewGameObject red 1.0]
-    ++ [ words black "Game over!"
-    |>   scale 5 ]
+    [ gameOver |> viewGameObject red 1.0
+    , words black "Game over!" |> scale 5 ]
   else
     []
 
